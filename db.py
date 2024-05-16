@@ -2,14 +2,13 @@ import pyrebase
 
 # Configure o Firebase
 config = {
-  "apiKey": "SuaApiKey",
-  "authDomain": "SeuAuthDomain",
-  "databaseURL": "SuaDatabaseURL",
-  "projectId": "SeuProjectId",
-  "storageBucket": "SeuStorageBucket",
-  "messagingSenderId": "SeuMessagingSenderId",
-  "appId": "SeuAppId",
-  "measurementId": "SuaMeasurementId"
+  apiKey: "AIzaSyAenex_EGTp0WkzFokkF-_80grJGU0KQco",
+  authDomain: "data-44077.firebaseapp.com",
+  databaseURL: "https://data-44077-default-rtdb.firebaseio.com",
+  projectId: "data-44077",
+  storageBucket: "data-44077.appspot.com",
+  messagingSenderId: "930609972407",
+  appId: "1:930609972407:web:11f777ec00c05be500f932"
 }
 
 firebase = pyrebase.initialize_app(config)
@@ -20,6 +19,3 @@ def incrementa_acesso():
     novo_acesso = acesso_atual + 1
     db.child("acessos").set(novo_acesso)
     print("Acesso incrementado com sucesso!")
-
-# Exemplo de uso da função
-incrementa_acesso()
