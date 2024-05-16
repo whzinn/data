@@ -10,9 +10,9 @@ def main():
     return "ok"
 
 
-@app.route('/clique')
-def clique():
-    d = incrementa_acesso()
+@app.route('/clique/<ip>')
+def clique(ip):
+    d = incrementa_acesso(ip)
     return d
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
