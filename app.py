@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import time
-import smtp_pague
+
 app = Flask(__name__)
 
 @app.route('/clique')
