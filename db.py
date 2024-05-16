@@ -2,13 +2,13 @@ import pyrebase
 
 # Configure o Firebase
 config = {
-  apiKey: "AIzaSyAenex_EGTp0WkzFokkF-_80grJGU0KQco",
-  authDomain: "data-44077.firebaseapp.com",
-  databaseURL: "https://data-44077-default-rtdb.firebaseio.com",
-  projectId: "data-44077",
-  storageBucket: "data-44077.appspot.com",
-  messagingSenderId: "930609972407",
-  appId: "1:930609972407:web:11f777ec00c05be500f932"
+  "apiKey": "AIzaSyAenex_EGTp0WkzFokkF-_80grJGU0KQco",
+  "authDomain": "data-44077.firebaseapp.com",
+  "databaseURL": "https://data-44077-default-rtdb.firebaseio.com",
+  "projectId": "data-44077",
+  "storageBucket": "data-44077.appspot.com",
+  "messagingSenderId": "930609972407",
+  "appId": "1:930609972407:web:11f777ec00c05be500f932"
 }
 
 firebase = pyrebase.initialize_app(config)
