@@ -17,5 +17,6 @@ db = firebase.database()
 def incrementa_acesso():
     acesso_atual = db.child("acessos").get().val()
     novo_acesso = acesso_atual + 1
-    db.child("acessos").set(novo_acesso)
+    d = db.child("acessos").set(novo_acesso)
     print("Acesso incrementado com sucesso!")
+    return f'{acesso_atual}, {d}'
