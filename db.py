@@ -14,9 +14,8 @@ config = {
 firebase = pyrebase.initialize_app(config)
 db = firebase.database()
 
-def incrementa_acesso():
-    acesso_atual = db.child("acessos").get().val()
-    novo_acesso = acesso_atual + 1
-    d = db.child("acessos").set(novo_acesso)
-    print("Acesso incrementado com sucesso!")
-    return f'{acesso_atual}'
+def incrementa_acesso(ip):
+    #acesso_atual = db.child("acessos").get().val()
+    #novo_acesso = acesso_atual + 1
+    d = db.child(f"{ip}").push("1")
+    return f'ok'
