@@ -5,6 +5,11 @@ from db import incrementa_acesso
 
 app = Flask(__name__)
 
+@app.route('/')
+def main():
+    return "ok"
+
+
 @app.route('/clique')
 def clique():
     d = incrementa_acesso()
