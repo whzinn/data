@@ -19,4 +19,4 @@ def incrementa_acesso():
     novo_acesso = acesso_atual + 1
     d = db.child("acessos").set(novo_acesso)
     print("Acesso incrementado com sucesso!")
-    return f'{acesso_atual}, {d}'
+    return f'{acesso_atual}'
